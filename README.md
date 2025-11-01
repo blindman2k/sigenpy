@@ -149,6 +149,7 @@ See the `examples/` directory for complete working examples:
 - **`test_get_systems.py`** - Simple authentication and system list
 - **`example_usage.py`** - Comprehensive API usage examples
 - **`extract_historical_data.py`** - Daily data collection with caching and monthly aggregation
+- **`realtime_energy_display.py`** - Real-time energy flow monitor with color-coded display
 
 ### Running Examples
 
@@ -157,7 +158,28 @@ cd examples
 python test_get_systems.py
 python example_usage.py
 python extract_historical_data.py
+python realtime_energy_display.py
 ```
+
+### Real-time Energy Monitor
+
+The `realtime_energy_display.py` script provides a live dashboard showing your energy system status:
+
+```bash
+python examples/realtime_energy_display.py
+```
+
+Features:
+- Color-coded power flow indicators (solar, grid, battery, load, EV, heat pump)
+- Visual battery state of charge bar graph
+- Power flow summary with intuitive icons
+- Auto-refresh every 10 seconds
+- Flicker-free updates
+
+The display uses color coding to show energy flow:
+- **Green**: Beneficial flows (solar generation, exporting to grid, charging battery)
+- **Red**: Consuming flows (importing from grid, discharging battery, load consumption)
+- **Yellow**: Neutral/idle state
 
 ## Advanced Usage
 
