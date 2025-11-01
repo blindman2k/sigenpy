@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sigenpy"
+version = "0.1.0"
+description = "Python client library for Sigen Cloud API"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Launch Systems Pty Ltd", email = "sigenpy@bcde.au"}
+]
+keywords = ["sigen", "solar", "battery", "api", "client"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "black>=21.0",
+    "flake8>=3.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/blindman2k/sigenpy"
+Documentation = "https://github.com/blindman2k/sigenpy/blob/main/README.md"
+Repository = "https://github.com/blindman2k/sigenpy.git"
+Issues = "https://github.com/blindman2k/sigenpy/issues"
